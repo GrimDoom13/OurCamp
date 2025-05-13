@@ -1,0 +1,360 @@
+/*General body Style*/
+body {
+/*background collor*/
+        background-color:rgb(220,220,220);
+
+/*background*/
+ 
+         height: fit-content;
+        background-image: url('Media/Background/DirtBackground_B.jpeg');
+        background-repeat:repeat;
+        background-position-y:bottom;
+  
+/*text style*/    
+        text-align: center;
+    }
+    .smalltext {
+
+        font-size: small;
+    }
+
+/* link style */
+    style{
+
+    a:link {
+      color: #000;
+    }
+    a:visited {
+      color: #000;
+    }
+    a:hover {
+      color: #000;
+    }
+    a:active {
+      color: #000;
+    }
+}
+/*Menu body Style*/
+body.MenuPG {
+    /*background collor*/
+            background-color:rgb(220,220,220);
+    
+    /*background*/
+     
+             height: fit-content;
+            background-image: url('Media/Background/Oak.png');
+            background-size: 10%;
+            filter: contrast(80%);
+            background-repeat:repeat;
+            background-position-y:bottom;
+      
+    /*text style*/    
+            text-align: center;
+        }
+    
+    /* link style */
+        style{
+    
+        a:link {
+          color: #000;
+        }
+        a:visited {
+          color: #000;
+        }
+        a:hover {
+          color: #000;
+        }
+        a:active {
+          color: #000;
+        }
+    }
+    .HeroMenuPG {
+
+
+        /*senter container*/
+        height: 7rem;
+        margin-left: auto;
+        margin-right: auto;
+        /*lligh content*/
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    
+    
+      }
+    
+      .HeroMenuPG::before {
+        content: "";
+        background-image: url('Media/Background/Desk.jpg');
+        filter: brightness(1.2) contrast(1) saturate(1.25) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+        background-size:20%;
+        background-position: center;
+        position: absolute;
+        top: -30%;
+        left: -10%;
+        background-repeat:repeat-x ;
+        width: 120%;
+        height: 57.8%;
+        z-index: -1;
+    
+      }
+     
+        /*   buttons*/
+            .HeroMenuPG .Menu,
+            .HeroMenuPG .About,
+            .HeroMenuPG .Home,
+            .HeroMenuPG .Locations {
+              cursor: pointer;
+              border: none;
+              background-color: transparent;
+              font-size: 44px;
+              font-weight: bold;
+    
+        }
+                /*hover*/
+                .HeroMenuPG .Menu:hover,
+                .HeroMenuPG .About:hover,
+                .HeroMenuPG .Home:hover,
+                .HeroMenuPG .Locations:hover {
+    
+                    
+                     text-decoration: underline;     
+        }
+
+/*contentBox*/
+.ContentBox {
+
+    top:0px;
+    border:3px solid #000;
+    width: 70%;
+
+    background-color: #CEA564;
+    font-weight: bold;
+/*senter container*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+
+    }
+/*hero*/
+.Hero {
+
+
+    /*senter container*/
+    height: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    /*lligh content*/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+  }
+
+  .Hero::before {
+    content: "";
+    background-image: url('Media/Background/Hero.jpeg');
+    background-size:contain; 
+    background-position: center;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    background-repeat:repeat-x ;
+    width: 100%;
+    height: 57.8%;
+    z-index: -1; 
+
+  }
+ 
+    /*   buttons*/
+        .Hero .Menu,
+        .Hero .About,
+        .Hero .Home,
+        .Hero .Locations {
+          cursor: pointer;
+          border: none;
+          background-color: transparent;
+          font-size: 44px;
+          font-weight: bold;
+
+    }
+            /*hover*/
+            .Hero .Menu:hover,
+            .Hero .About:hover,
+            .Hero .Home:hover,
+            .Hero .Locations:hover {
+
+                
+                 text-decoration: underline;     
+    }
+
+
+.TopicAndText{
+    font-size:x-large;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 0px;
+
+
+}
+
+
+
+/*Section1*/
+.BestFood{
+    border-bottom:3px solid #000;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+/*Section2*/
+.FoodType{
+    border-bottom:3px solid #000;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+
+}
+/*Section3*/
+.ServeArea{
+    border-bottom:3px solid #000;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+/*Section4*/
+.OwnerQuote{
+    border-bottom:3px solid #000;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+
+/*Menu*/
+
+.Food_Menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    width: fit-content;
+    margin: 5rem;
+
+}
+/*description*/
+.Food_Desctiption {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: 0 0 0;
+    border-radius: 5px;
+    padding: 5px;
+    position:relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/*Calory&Fat*/
+.CF {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Food Section*/
+.Food_Section:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
+.Food_Section{
+    cursor:pointer;
+    height: 80%;
+    width: 80%;
+    background-color: #8f631b;
+    border:3px #000;
+    margin: 20px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+/*Food View*/
+    .FoodContentBox{
+        top:0px;
+        border:3px solid #000;
+        width: 70%;
+
+        background-color: #CEA564;
+        font-weight: bold;
+    /*text style*/
+        .TopicAndText{
+
+            
+            font-size: x-large ;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+            flex-direction: column;
+            }
+        /*senter container*/
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10rem;
+
+}
+.FoodTopic{
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center ;
+    background-image: url('Media/Background/ChisledPlate.jpg');
+    background-size:auto 99.55%;
+    
+}
+
+    .Preview{
+    width: 20%;
+    height: 20%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    background-image: url('Media/Background/ChisledStone.jpg'); 
+    background-size: contain;
+        border:3px solid #000;
+
+
+    }
+/*Footer*/
+footer{
+font-size:large;
+color: #fff;
+background-color: #000;
+display: block;
+position: absolute;
+left: 0px;
+width: 100%;
+
+
+
+
+}
+
+
+  
